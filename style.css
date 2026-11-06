@@ -128,17 +128,39 @@ footer {
     padding: 1rem 2rem;
 }
 
-@media(max-width:600px) {
-    header {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
 
-    nav a {
-        margin: 0 0.5rem;
-    }
+  header h1 {
+    line-height: 1.2;
+  }
 
-    section {
-        padding: 1rem;
-    }
+  .logo {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+  }
+
+  nav br {
+    display: none;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  section {
+    padding: 1rem;
+  }
 }
