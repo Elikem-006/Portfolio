@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #f1f5f9;
+    background-image: url(webbg3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.45);
+    color: #edeff2;
+    padding: 1rem 2rem;
+}
+
+
+
+h1:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #7dd3fc
+}
+
+section {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    backdrop-filter: blur(4px);
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #7dd3fc;
+    ;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+    color: #7dd3fc;
+}
+
+.cert-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cert {
+    background: (255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #f1f5f9;
+    transition: box-shadow 0.3s, transform 0.3s;
+    flex: 1 1 250px;
+    padding: 1rem;
+    border: 1px;
+    border-radius: 8px;
+}
+
+.cert a {
+    color: #7dd3fc;
+}
+
+.cert:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.issuer {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.date {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.contact-details a {
+    text-decoration: underline;
+    opacity: 0.8;
+    color: #7dd3fc
+}
+
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.45);
+    color: #edeff2;
+    padding: 1rem 2rem;
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
